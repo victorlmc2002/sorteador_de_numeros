@@ -24,10 +24,18 @@ function sortear(){
         imprimeTexto("resultado", "Digite números válidos");
         return;
     }
+    else if(inicial > final){
+        imprimeTexto("resultado", "O número inicial tem que ser menor que o final");
+        return;
+    }
+    else if(inicial < 0 || final < 0 || quantidade < 0){
+        imprimeTexto("resultado", "Somente números positivos");
+        return;
+    }
     for(let i = 0; i < quantidade; i++){
         let numero = parseInt(Math.random()*(final-inicial + 1) + inicial);
-        while(lista.includes(numero)){
-            numero = parseInt(Math.random()*(final-inicial + 1) + inicial);
+        // while(lista.includes(numero)){
+        //     numero = parseInt(Math.random()*(final-inicial + 1) + inicial);
         }
         lista.push(parseInt(Math.random()*(final-inicial + 1) + inicial));
     }
