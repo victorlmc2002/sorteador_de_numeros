@@ -36,7 +36,7 @@ function sortear(){
         let numero = parseInt(Math.random()*(final-inicial + 1) + inicial);
         // while(lista.includes(numero)){
         //     numero = parseInt(Math.random()*(final-inicial + 1) + inicial);
-        }
+        // }
         lista.push(parseInt(Math.random()*(final-inicial + 1) + inicial));
     }
     if(lista.length < 1){
